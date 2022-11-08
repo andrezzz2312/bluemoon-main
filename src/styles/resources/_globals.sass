@@ -1,0 +1,64 @@
+*, *:after, *:before
+  box-sizing: border-box
+
+body
+  margin: unset
+  border: unset
+  padding: unset
+
+a
+  text-decoration: unset
+  transition: color .2s, background-color .2s, box-shadow .2s
+
+button
+  border: unset
+  padding: unset
+  background: unset
+  cursor: pointer
+  transition: color .2s, background-color .2s, box-shadow 2s
+  
+.progress-bar-container 
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  width: 100%
+  height: 100%
+  background-color: black
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  z-index: 1000
+  transition: all 1s ease
+
+#wrImg 
+  margin-top: -1rem
+
+#progress-bar 
+  width: 40%
+  margin-top: 0.5%
+  height: 2%
+  accent-color: #48aabb
+  /* color: #48aabb */
+  background-color: white
+  border: none
+  border-radius: 1rem
+  transition: all 3s ease-in-out
+
+#progress-bar::-webkit-progress-bar 
+  border-radius: 1rem
+  transition: all 3s ease-in-out
+
+#progress-bar::-webkit-progress-value 
+  background-color: #48aabb !important
+  border-radius: 1rem
+  transition: all 3s ease-in-out
+
+#progress-bar::-moz-progress-bar 
+  background-color: #48aabb !important
+  border-radius: 1rem
+  transition: all 3s ease-in-out
+
+.vanish 
+  opacity: 0    
