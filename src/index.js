@@ -5,7 +5,8 @@ import AppContextProvider from './context/AppContext'
 import './styles/index.sass'
 
 ReactDOM.render(
-  <AppContextProvider>
-    <App/>
-  </AppContextProvider>
-, document.getElementById('app'))
+	<AppContextProvider>
+		<App />
+	</AppContextProvider>,
+	document.getElementById('root')
+)
